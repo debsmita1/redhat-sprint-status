@@ -72,7 +72,7 @@ github_data_b+="\n<https://github.com/search?q=repo%3Aopenshift%2Fconsole++-labe
 echo "Posting on #forum-devconsole slack channel"
 
 ############==============ODC-UI================###############
-curl -X POST -H "Content-type:application/json" --data "{\"type\":\"home\", \"blocks\":[{\"type\":\"header\",\"text\":{\"type\":\"plain_text\",\"text\":\"$head\"}},{\"type\":\"section\",\"fields\":[{\"type\":\"mrkdwn\",\"text\":\"$odc_stories\"},{\"type\":\"mrkdwn\",\"text\":\"$odc_bugs\"}]},{\"type\":\"divider\"},{\"type\":\"header\",\"text\":{\"type\":\"plain_text\",\"text\":\"Github Status\"}},{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"$github_data\"}}, {\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"$github_data_b\"}}]}" https://hooks.slack.com/services/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
+curl -X POST -H "Content-type:application/json" --data "{\"type\":\"home\", \"blocks\":[{\"type\":\"header\",\"text\":{\"type\":\"plain_text\",\"text\":\"$head\"}},{\"type\":\"section\",\"fields\":[{\"type\":\"mrkdwn\",\"text\":\"$odc_stories\"},{\"type\":\"mrkdwn\",\"text\":\"$odc_bugs\"}]},{\"type\":\"divider\"},{\"type\":\"header\",\"text\":{\"type\":\"plain_text\",\"text\":\"Github Status\"}},{\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"$github_data\"}}, {\"type\":\"section\",\"text\":{\"type\":\"mrkdwn\",\"text\":\"$github_data_b\"}}]}" https://hooks.slack.com/services/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
 
 
 echo "\nDone"
